@@ -10,6 +10,19 @@ body {
  border-radius: 15px;
  background: #eee;
  margin: 0 auto;
+ div{
+  i{
+   display: inline-block;
+   height: 10px;
+   width: 10px;
+   border-radius: 50%;
+   background: #CCCCCC;
+   //margin: 10px;
+  }
+  .active-corousel{
+   background: red;
+  }
+ }
 
 }
 
@@ -54,7 +67,7 @@ body {
 
 .gallery {
  width: 130px;
- //overflow: hidden;
+ overflow: hidden;
 }
 
 .gallery ul {
