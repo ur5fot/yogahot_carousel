@@ -8,12 +8,14 @@ document.addEventListener('DOMContentLoaded', function () {
     var listElems = carousel.querySelectorAll('li');
     var width = carousel.querySelector('li').offsetWidth; // ширина, смотрим по первому li
     var containerControl = carousel.querySelector('.containerControl');
+
     var control = [];
     control[0] = carousel.querySelector('.control');
+    carousel.querySelector('.control').remove();
 
     var position = 0; // текужий отступ
 
-    for (var i = 1; i < listElems.length; i++) {
+    for (var i = 0; i < listElems.length; i++) {
         control[i] = containerControl.appendChild(control[0].cloneNode(true));
     }
     var mark = 0 ;
